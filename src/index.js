@@ -433,7 +433,7 @@ class DropDownPicker extends React.Component {
                     styles.dropDownBox,
                     this.props.dropDownStyle,
                     ! this.state.isVisible && styles.hidden, {
-                        top: this.state.top,
+                        // top: this.state.top,
                         maxHeight: this.props.dropDownMaxHeight,
                         zIndex: this.props.zIndex
                     }
@@ -604,7 +604,7 @@ const styles = StyleSheet.create({
     dropDownBox: {
         alignItems: 'center',
         justifyContent: 'center',
-        position: 'absolute',
+        position: 'relative',
         width: '100%',
         borderTopLeftRadius: 0,
         borderTopRightRadius: 0,
